@@ -45,18 +45,19 @@ public class LineComputation {
 	        Double line2 = lengths[1];
 	      	  
 	        System.out.println("Line1 length : "+lengths[0]+" Line1 length : "+lengths[1]);
-		    if (line1.equals(line2) == true) {
-		    	
-		    	System.out.println("_____________________________________________________________________________");
-				System.out.println("Lines are equal to Length");
-			
-		    }else
 		    
-		    	System.out.println("_____________________________________________________________________________");
-				System.out.println("Lines are not equal to Length");	
-			}	
+	        int compare = line1.compareTo(line2);
 	        
+	       if ( compare == 0 )
+
+	    	   System.out.println("Both lines have Equal length");
+			  
+	       else if( compare > 0 )
 			
+	    	   System.out.println("Line1 is greater than Line2");
+	       else
+	    	   System.out.println("Line2 is greater than Line1");
+			}
 			
 			public static void main(String[] args) {
 					
